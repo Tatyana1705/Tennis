@@ -1,0 +1,32 @@
+.page-header {
+  position: relative;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparentize($body-color, 0.8);
+
+  @media (prefers-color-scheme: dark) {
+    background-image: linear-gradient(92.7deg, rgba(134, 27, 165, 0.8) -0.4%, rgba(33, 29, 116, 0.8) 85.21%);
+  }
+
+  @media (min-width: $tablet) {
+    padding: $wrapper-tablet;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: $wrapper-desktop;
+    padding-top: 51px;
+    padding-bottom: 14px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.page-header__toggle {
+  display: flex;
+  justify-content: flex-end;
+}

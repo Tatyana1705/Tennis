@@ -1,0 +1,48 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.social__btn {
+  padding: 0 5px;
+
+  @media (min-width: $desktop) {
+    margin-left: 14px;
+    padding: 0;
+  }
+}
+
+
+.social__btn svg {
+  fill: $fonts-color;
+
+  &:hover {
+    fill: $fonts-color-hover;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    fill: $fonts-color-dark;
+
+    &:hover {
+      fill: $fonts-color-hover-dark;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}

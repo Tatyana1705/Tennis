@@ -12,7 +12,45 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  hello Geny
+  <header class="page-header">
+    <div class="page-header__toggle">
+      <button class="toggle toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="page-header__nav main-nav main-nav--close">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Преимущества</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">О спорте</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Стиомость</a>
+        </li>
+        <li class="main-nav__item contacts">
+          <div class="contacts__phone">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.511 9.2c.508.508 1.534 1.473 2.233 1.645.7.17 1.218-.22 1.765-.689.287-.246.415-.53 1.112-.656.722-.13 2.757 1.222 3.246 1.8 1.484 1.76.153 3.73-1.852 3.899-2.48.207-5.787-2.05-8.12-4.383C2.564 8.484.305 5.178.513 2.697.682.692 2.652-.639 4.412.845c.578.488 1.93 2.524 1.8 3.246-.125.696-.41.825-.656 1.112-.47.547-.86 1.065-.689 1.765.172.7 1.136 1.725 1.644 2.233Z"></svg>
+            <a class="contacts__number" href="tel:89290877777">8 929 08 777 77</a>
+          </div>
+          <div class="contacts__social social">
+            <a class="social__btn">
+              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.082 1.472A3.327 3.327 0 0 0 .76 4.793v6.836a3.327 3.327 0 0 0 3.322 3.322h6.836a3.326 3.326 0 0 0 3.322-3.322V4.794a3.326 3.326 0 0 0-3.322-3.322H4.082Zm6.836 14.24H4.082A4.087 4.087 0 0 1 0 11.63V4.794A4.087 4.087 0 0 1 4.082.712h6.836A4.087 4.087 0 0 1 15 4.794v6.836a4.087 4.087 0 0 1-4.082 4.082"/><path d="M7.5 4.32a3.897 3.897 0 0 0-3.892 3.892A3.897 3.897 0 0 0 7.5 12.104a3.897 3.897 0 0 0 3.892-3.892A3.897 3.897 0 0 0 7.5 4.32Zm0 8.544a4.657 4.657 0 0 1-4.652-4.652A4.657 4.657 0 0 1 7.5 3.56a4.657 4.657 0 0 1 4.652 4.652A4.657 4.657 0 0 1 7.5 12.864ZM12.816 3.786a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0Z"></svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+            <a class="social__btn">
+              <svg width="15" height="16"  viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.262 4.101h2.615c.101 0 .192.065.234.164.6 1.407 1.333 2.68 2.215 3.802a.172.172 0 0 0 .313-.026c.276-.722.784-2.478-.2-3.724-.087-.111-.052-.286.073-.342.996-.447 1.971-.512 2.919-.055.199.097.33.31.33.545l.222 3.615c0 .161.136.29.281.256 1.093-.25 1.737-2.014 2.374-3.855a.54.54 0 0 1 .502-.38h2.407c.197 0 .356.19.32.398-.226 1.307-1.446 3.002-2.084 3.817a.803.803 0 0 0-.003.975l2.153 2.762c.155.198.024.501-.217.501h-2.724a.775.775 0 0 1-.589-.278l-1.905-1.709c-.1-.116-.286-.157-.38-.035-.236.309-.217.69-.329 1.556a.527.527 0 0 1-.514.466H6.41c-.265 0-.526-.06-.766-.182-1.069-.546-3.99-2.481-5.632-7.9-.055-.181.072-.37.25-.37Z"></svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </div>
+        </li>
+    </nav>
+  </header>
+
+  <script src="js/main.min.js"></script>
+
 </body>
 </html>

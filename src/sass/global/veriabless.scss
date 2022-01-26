@@ -1,0 +1,21 @@
+//font
+$font-family: "Ruda", "Arial", sans-serif;
+
+//viewports
+$tablet: 768px;
+$desktop: 1280px;
+$mobile-only: 767px;
+
+//color
+$body-color: rgba(186, 216, 254, 1);
+$fonts-color: rgba(0, 0, 0, 1);
+$body-color-dark: rgba(17, 48, 151, 1);
+$fonts-color-dark: rgba(255, 255, 255, 1);
+$fonts-color-hover: rgba(50, 89, 164, 1);
+$fonts-color-hover-dark: rgba(30, 187, 255, 1);
+
+//wrapper
+$wrapper-mobile: 0 20px;
+$wrapper-tablet: 0 64px;
+$wrapper-desktop: 0 100px;
+
