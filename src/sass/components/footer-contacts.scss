@@ -69,18 +69,18 @@
 }
 
 .footer-contacts__phone svg {
-  fill: rgba(0, 0, 0, 1);
-  margin-right: 10px;
   width: 20px;
   height: 20px;
+  margin-right: 10px;
+  fill: rgba(0, 0, 0, 1);
 
   @media (prefers-color-scheme: dark) {
     fill: $fonts-color-dark;
   }
 
   @media (min-width: $desktop) {
-    margin-right: 20px;
     width: 37px;
     height: 37px;
+    margin-right: 20px;
   }
 }
