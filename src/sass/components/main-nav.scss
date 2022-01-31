@@ -1,6 +1,6 @@
 .main-nav {
-  padding: $wrapper-mobile;
   position: absolute;
+  padding: $wrapper-mobile;
   width: 100%;
   box-sizing: border-box;
   padding-top: 0;
@@ -46,8 +46,8 @@
 }
 
 .main-nav__item {
-  text-align: center;
   padding: 15px 0;
+  text-align: center;
   border-bottom: solid rgba(226, 227, 255, 1) 2px;
   cursor: pointer;
 
