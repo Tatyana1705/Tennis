@@ -1,12 +1,13 @@
 .main-nav {
   position: absolute;
-  padding: $wrapper-mobile;
   width: 100%;
   box-sizing: border-box;
+  padding: $padding-mobile;
   padding-top: 0;
   background-image: linear-gradient(180deg, #bad8fe 17%, #c7a2f0 109%);
   filter: drop-shadow(0 8px 4px rgba(5, 5, 60, 0.2));
   transition: top 0.3s linear, opacity 0.3s linear;
+  z-index: 1;
 
   &--close {
     top: -313px;
@@ -41,6 +42,7 @@
   }
 
   @media (min-width: $desktop) {
+    @include wrapper;
     align-items: flex-start;
   }
 }

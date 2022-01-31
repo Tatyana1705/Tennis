@@ -7,7 +7,27 @@
 @mixin button-reset {
   background-color: transparent;
   border: none;
+}
+
+@mixin button {
+  @include button-reset;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(93.98deg, #3d45a6 0%, #a575c7 71.95%);
+
+  @media (prefers-color-scheme: dark) {
+    background-image: linear-gradient(93.98deg, #3d46c2 0%, #820fa8 71.95%);
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 @mixin link-reset {
@@ -17,4 +37,34 @@
 @mixin default-link {
   @include link-reset;
   color: rgba(0, 0, 0, 1);
+}
+
+@mixin default-title {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin default-subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+
+@mixin wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0;
 }

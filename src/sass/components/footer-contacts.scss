@@ -1,0 +1,86 @@
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 64px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 100px;
+  }
+}
+
+.footer-contacts__phone {
+  @include default-subtitle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &:hover .footer-contacts__number {
+    color: rgba(140, 77, 189, 1);
+  }
+
+  &:active svg {
+    fill: rgba(140, 77, 189, 1);
+    opacity: 0.4;
+  }
+
+  &:active .footer-contacts__number {
+    opacity: 0.4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:hover .footer-contacts__number {
+      color: rgba(30, 171, 243, 1);
+    }
+
+    &:active svg {
+      fill: rgba(30, 171, 243, 1);
+      opacity: 0.4;
+    }
+
+    &:active .footer-contacts__number {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.footer-contacts__number {
+  @include default-link;
+
+  @media (prefers-color-scheme: dark) {
+    color: $fonts-color-dark;
+  }
+}
+
+.footer-contacts__phone svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: rgba(0, 0, 0, 1);
+
+  @media (prefers-color-scheme: dark) {
+    fill: $fonts-color-dark;
+  }
+
+  @media (min-width: $desktop) {
+    width: 37px;
+    height: 37px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+
+  @media (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-social__btn svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(0, 0, 0, 1);
+
+  &:hover {
+    fill: rgba(140, 77, 189, 1);
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    fill: $fonts-color-dark;
+
+    &:hover {
+      fill: rgba(30, 171, 243, 1);
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}

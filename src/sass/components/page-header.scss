@@ -1,8 +1,6 @@
 .page-header {
+  @include default-subtitle;
   position: relative;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
   background-color: transparentize($body-color, 0.8);
 
   @media (prefers-color-scheme: dark) {
@@ -10,7 +8,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: $wrapper-tablet;
+    padding: $padding-tablet;
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 14px;
@@ -18,7 +16,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: $wrapper-desktop;
+    padding: $padding-desktop;
     padding-top: 51px;
     padding-bottom: 14px;
     font-size: 24px;
