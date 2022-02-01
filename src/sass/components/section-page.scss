@@ -1,0 +1,113 @@
+.section-page {
+  &--teacher {
+    background-image: linear-gradient(160.59deg, #c59cee 15.05%, #dfefff 71.6%);
+
+    @media (min-width: $tablet) {
+      background-image: linear-gradient(214.15deg, #bf8aea 3.85%, #dfefff 75.31%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(138.52deg, #1247c3 33.01%, #0f1670 90.45%);
+    }
+  }
+}
+
+.section-page__wrapper {
+  padding: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 64px;
+  }
+
+  @media (min-width: $desktop) {
+    @include wrapper;
+    padding: 100px;
+  }
+}
+
+.section-page__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: solid 2px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 111px;
+    padding-bottom: 35px;
+    border-bottom: solid 3px;
+  }
+}
+
+.section-page--teacher .section-page__title {
+  border-color: #60457b;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #4da3e6;
+  }
+}
+
+.section-page__text {
+  @include default-subtitle;
+}
+
+.section-page__number {
+  position: relative;
+  margin: 0;
+  padding-left: 60px;
+  font-size: 14px;
+  line-height: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 50px;
+    height: 1px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 148px;
+    font-size: 18px;
+    line-height: 22px;
+
+    &::before {
+      width: 139px;
+      height: 2px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 260px;
+    font-size: 24px;
+    line-height: 29px;
+
+    &::before {
+      width: 251px;
+      height: 3px;
+    }
+  }
+}
+
+.section-page--teacher .section-page__number {
+  color: #60457b;
+
+  &::before {
+    background-color: #60457b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
