@@ -1,0 +1,64 @@
+.present {
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-image: url("../img/present-mobile-light.svg");
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      flex-shrink: 0;
+      width: 280px;
+      height: 260px;
+      margin: 0;
+      background-image: url("../img/present-mobile-light.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      order: 1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      width: 630px;
+      height: 550px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &::before {
+      background-image: url("../img/present-mobile-dark.svg");
+    }
+  }
+}
+
+.present_text p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 39px;
+  }
+}
