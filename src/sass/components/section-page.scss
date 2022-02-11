@@ -10,10 +10,18 @@
       background-image: linear-gradient(138.52deg, #1247c3 33.01%, #0f1670 90.45%);
     }
   }
+
+  &--present {
+    background-image: linear-gradient(233.89deg, #ffffff 13.27%, #d4e9ff 43.28%, #c299ed 90.15%);
+
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(231.29deg, #a12fcc -8.85%, #1234a3 78.55%);
+    }
+  }
 }
 
 .section-page__wrapper {
-  padding: 20px;
+  padding: 30px 20px;
 
   @media (min-width: $tablet) {
     padding: 50px 64px;
@@ -34,7 +42,7 @@
   border-bottom: solid 2px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding-bottom: 16px;
   }
 
@@ -50,6 +58,22 @@
 
   @media (prefers-color-scheme: dark) {
     border-color: #4da3e6;
+  }
+}
+
+.section-page--advantages .section-page__title {
+  border-color: #557399;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #4da3e6;
+  }
+}
+
+.section-page--present .section-page__title {
+  border-color: #5b81a2;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #d6bee5;
   }
 }
 
@@ -101,6 +125,38 @@
 
   &::before {
     background-color: #60457b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.section-page--advantages .section-page__number {
+  color: #557399;
+
+  &::before {
+    background-color: #557399;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.section-page--present .section-page__number {
+  color: #5b81a2;
+
+  &::before {
+    background-color: #5b81a2;
   }
 
   @media (prefers-color-scheme: dark) {
