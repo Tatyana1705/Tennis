@@ -1,0 +1,8 @@
+.error {
+  color: #d81212;
+  outline: 5px solid #d81212;
+
+  &::placeholder {
+    color: #d81212;
+  }
+}
