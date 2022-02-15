@@ -68,3 +68,75 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@mixin input {
+  padding: 12px 20px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    color: #535568;
+  }
+
+  &:hover {
+    background-color: #d6cfff;
+  }
+
+  &:focus-within {
+    background-color: #ffffff;
+    outline: 5px solid #5c54b1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      background-color: #bcb2f9;
+    }
+
+    &:focus-within {
+      background-color: #ffffff;
+      outline: 5px solid #7918ae;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 19px 20px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &:first-child {
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &:first-child {
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+  }
+}
